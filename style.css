@@ -1,0 +1,36 @@
+body {
+  background-color: #333;
+  color: #DDD;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#canvas-background {
+  margin: 0 auto;
+  height: 480px;
+  width: 640px;
+  border: 2px solid black;
+}
+
+#presentation, #values {
+  width: 830px;
+  margin: 15px auto;
+  line-height: 1.75em;
+}
+
+canvas.screen-canvas {
+  display: block;
+}
+
+a {
+  color: #0af;
+}
+
+footer {
+  font-size: 90%;
+  margin: 30px;
+}
+
+footer a {
+  color: #ddd;
+}

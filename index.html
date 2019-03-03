@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Perceptron demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/Perceptron.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<h1>Perceptron demo</h1>
+<div id="canvas-background">
+    <canvas id="maincanvas" class="screen-canvas" width="640" height="480">
+        <p>Your browser does not support the &lt;canvas&gt; element.</p>
+    </canvas>
+</div>
+<p>
+    <button id="pause">Play / Pause</button>
+    <button id="step">Step</button>
+    <button id="reset">Reset</button>
+</p>
+<p id="values">
+    Number of points: <span id="numPoints"></span><br />
+    Real weights:<br />
+    w1: <span id="rw1"></span> | w2: <span id="rw2"></span> | b: <span id="rbias"></span><br />
+    Perceptron weights:<br />
+    w1: <span id="w1"></span> | w2: <span id="w2"></span> | b: <span id="bias"></span><br />
+    Accuracy: <span id="accuracy"></span>%<br />
+    Error: <span id="error"></span>
+</p>
+<p id="presentation">
+    This is a JavaScript implementation of the simple <a href="https://en.wikipedia.org/wiki/Perceptron">Perceptron</a>
+    algorithm.<br />
+    A perceptron is a binary classifier that works through a linear operation on its input. The algorithm updates the
+    weights used in the operation so that the classification provide better results.<br />
+    In this example, our Perceptron has to classify 2-D points on a graph. The class of a given point corresponds to
+    which side of a line (represented on the graph as a <span style="font-weight: 700">bold</span> line) the point
+    is on; visually, this is shown as the color of the points. As the algorithm goes, the Perceptron (represented by
+    the thinner line) will update itself and progressively match the reference class; which is shown on the graph as
+    the thinner line getting closer to the bolder line.
+</p>
+
+<footer>by <a href="/">Cédric "tuzepoito" Chartron</a> - 2019.</footer>
+
+</body>
+</html>
